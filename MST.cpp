@@ -48,6 +48,7 @@ int main()
     int totalCost = 0;
     sort(edges.begin(), edges.end());
     for(int i = 0; i<v; i++) make(i);
+    cout<<"***************************MST Edges********************************"<<endl;
     for(int i = 0; i<edges.size(); i++)
     {
         int wt = edges[i].first;
@@ -60,6 +61,6 @@ int main()
     }
 
 
-    cout<<totalCost<<endl;
+    cout<<"Minimum Cost is : " << totalCost<<endl;
     return 0;
 }
